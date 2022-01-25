@@ -33,8 +33,6 @@ ActiveRecord::Schema.define(version: 2022_01_24_141050) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-ActiveRecord::Schema.define(version: 2022_01_23_130448) do
-
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
     t.bigint "room_id", null: false
